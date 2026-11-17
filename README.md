@@ -111,7 +111,7 @@
 
 - **[Summer2027-Internships](https://github.com/SimplifyJobs/Summer2027-Internships)** · ★ 48.4k<br>2027 年暑期实习清单：软件、数据科学、AI、量化、产品和硬件方向，美国为主。<br><sub>更新于 2026-11</sub>
 - **[2027-SWE-College-Jobs](https://github.com/speedyapply/2027-SWE-College-Jobs)** · ★ 9.6k<br>2027 届软件工程实习和应届职位清单，每日更新。<br><sub>更新于 2026-11</sub>
-- **[2027-AI-College-Jobs](https://github.com/speedyapply/2027-AI-College-Jobs)** · ★ 6.6k<br>2027 届 AI / 机器学习实习和应届职位清单，每日更新。<br><sub>更新于 2026-11</sub>
+- **[2027-AI-College-Jobs](https://github.com/speedyapply/2027-AI-College-Jobs)** · ★ 6.7k<br>2027 届 AI / 机器学习实习和应届职位清单，每日更新。<br><sub>更新于 2026-11</sub>
 - **[european-tech-internships-2026](https://github.com/LorenzoLaCorte/european-tech-internships-2026)** · ★ 919<br>欧洲科技实习、应届职位和研究机会，定期更新。<br><sub>更新于 2026-11</sub>
 - **[Campus2026](https://github.com/namewyf/Campus2026)** · ★ 426 · 🀄<br>互联网校招和实习信息汇总，社区共同维护。<br><sub>更新于 2026-07</sub>
 - **[Australia-Casual-Part-Time-Jobs](https://github.com/workopia/Australia-Casual-Part-Time-Jobs)** · ★ 189<br>澳大利亚临时工、兼职和圣诞季兼职职位，每日更新。<br><sub>更新于 2026-11</sub>

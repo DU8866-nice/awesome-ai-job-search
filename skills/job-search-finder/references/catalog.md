@@ -7,7 +7,7 @@ Generated from data/tools.yaml. Fields: repo | stars | last push | os | flags (a
 - https://github.com/career-ops-hq/career-ops | stars=83160 | pushed=2026-11-17 | os=- | flags=agent
   - 开源的 AI 求职 Agent：贴一个职位进去，在你自己的电脑上判断职位是否还在招、和你匹不匹配，再定制简历、起草回答，最后由你点提交。
   - An open-source AI job search agent: paste a job and it checks, on your machine, whether the role is still open and whether it fits, then tailors your CV and drafts answers. You press Submit.
-- https://github.com/ai-job-search-dev/ai-job-search | stars=72144 | pushed=2026-11-16 | os=- | flags=agent
+- https://github.com/ai-job-search-dev/ai-job-search | stars=72145 | pushed=2026-11-16 | os=- | flags=agent
   - 建在 Claude Code 上的求职框架：fork 后填好个人档案，让 Claude 评估职位、定制简历、写求职信并帮你准备面试。
   - A job application framework built on Claude Code: fork it, fill in your profile, and let Claude evaluate postings, tailor your CV, write cover letters and prepare you for interviews.
 - https://github.com/AienTech/dossier | stars=5239 | pushed=2026-11-13 | os=- | flags=selfhost
@@ -103,7 +103,7 @@ Generated from data/tools.yaml. Fields: repo | stars | last push | os | flags (a
 - https://github.com/speedyapply/2027-SWE-College-Jobs | stars=9635 | pushed=2026-11-16 | os=- | flags=-
   - 2027 届软件工程实习和应届职位清单，每日更新。
   - 2027 software engineering internship and new-grad jobs, updated daily.
-- https://github.com/speedyapply/2027-AI-College-Jobs | stars=6649 | pushed=2026-11-16 | os=- | flags=-
+- https://github.com/speedyapply/2027-AI-College-Jobs | stars=6650 | pushed=2026-11-16 | os=- | flags=-
   - 2027 届 AI / 机器学习实习和应届职位清单，每日更新。
   - 2027 AI/ML internship and new-grad jobs, updated daily.
 - https://github.com/LorenzoLaCorte/european-tech-internships-2026 | stars=919 | pushed=2026-11-01 | os=- | flags=-

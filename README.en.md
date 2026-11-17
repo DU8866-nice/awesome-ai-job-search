@@ -111,7 +111,7 @@ Internship, new-grad and entry-level lists you can read right on GitHub. Most ar
 
 - **[Summer2027-Internships](https://github.com/SimplifyJobs/Summer2027-Internships)** · ★ 48.4k<br>Summer 2027 internships in software, data science, AI, quant, product and hardware, mostly US.<br><sub>updated 2026-11</sub>
 - **[2027-SWE-College-Jobs](https://github.com/speedyapply/2027-SWE-College-Jobs)** · ★ 9.6k<br>2027 software engineering internship and new-grad jobs, updated daily.<br><sub>updated 2026-11</sub>
-- **[2027-AI-College-Jobs](https://github.com/speedyapply/2027-AI-College-Jobs)** · ★ 6.6k<br>2027 AI/ML internship and new-grad jobs, updated daily.<br><sub>updated 2026-11</sub>
+- **[2027-AI-College-Jobs](https://github.com/speedyapply/2027-AI-College-Jobs)** · ★ 6.7k<br>2027 AI/ML internship and new-grad jobs, updated daily.<br><sub>updated 2026-11</sub>
 - **[european-tech-internships-2026](https://github.com/LorenzoLaCorte/european-tech-internships-2026)** · ★ 919<br>European tech internships, new-grad roles and research opportunities, updated regularly.<br><sub>updated 2026-11</sub>
 - **[Campus2026](https://github.com/namewyf/Campus2026)** · ★ 426 · 🀄<br>Community-maintained campus recruiting and internship information for Chinese internet companies.<br><sub>updated 2026-07</sub>
 - **[Australia-Casual-Part-Time-Jobs](https://github.com/workopia/Australia-Casual-Part-Time-Jobs)** · ★ 189<br>Australian casual, part-time and Christmas casual jobs, updated daily.<br><sub>updated 2026-11</sub>
