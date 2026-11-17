@@ -1,0 +1,43 @@
+name: 推荐项目 / Recommend a project
+description: 推荐一个 AI 求职相关的开源项目 / Suggest an open-source job search project
+title: "[推荐] "
+labels: ["recommendation"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub 仓库 / Repository
+      placeholder: owner/name
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分类 / Category
+      options:
+        - 一站式求职助手 / All-in-one assistants
+        - 求职 Skill / Job search skills
+        - 找职位 / Find jobs
+        - 职位清单 / Job lists
+        - 写简历 / Resume builders
+        - 简历和职位匹配 / Resume matching
+        - 填申请表 / Application fillers
+        - 全自动投递 / Automatic applying
+        - 面试准备 / Interview prep
+        - 求职指南 / Guides
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 推荐理由 / Why
+      description: 数据存在哪里？会自动操作招聘网站吗？你实际用过吗？是你自己的项目吗？ / Where is data stored? Does it automate job sites? Have you used it? Is it your own project?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认 / Checks
+      options:
+        - label: 不是面试作弊、绕过验证码或编造经历的工具 / Not a tool for interview cheating, CAPTCHA bypass or fabricating experience
+          required: true

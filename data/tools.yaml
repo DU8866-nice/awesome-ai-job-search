@@ -1,0 +1,411 @@
+# Source of truth for README.md and README.en.md.
+# Edit this file, then run: python scripts/build_readme.py
+# Each entry needs `repo`, `zh` and `en`. Keep descriptions to one or two sentences.
+# Optional flags (only when the project's README says so):
+#   agent: true      runs inside an AI coding agent (Claude Code, Codex...) as a skill, plugin or CLI
+#   selfhost: true   runs on your own computer or server, your data stays with you
+#   cn: true         Chinese-friendly: Chinese UI or docs, or built for the Chinese job market
+#   auto: true       automates job sites (scraping or applying); accounts can get restricted
+#   note_zh / note_en: one short caveat shown under the entry
+# Categories with `static: true` hold reference material, so they don't get the stale mark.
+
+categories:
+  - id: pipeline
+    zh: "一站式求职助手"
+    en: "All-in-one job search assistants"
+    zh_intro: "把找职位、评估匹配、改简历、写求职信和跟踪投递放在一起的工具。这里收录的都不替你点“提交”，最后一步由你决定。"
+    en_intro: "Tools that combine finding jobs, scoring fit, tailoring resumes, drafting cover letters and tracking applications. None of these press Submit for you; the last step stays yours."
+    items:
+      - repo: career-ops-hq/career-ops
+        zh: "开源的 AI 求职 Agent：贴一个职位进去，在你自己的电脑上判断职位是否还在招、和你匹不匹配，再定制简历、起草回答，最后由你点提交。"
+        en: "An open-source AI job search agent: paste a job and it checks, on your machine, whether the role is still open and whether it fits, then tailors your CV and drafts answers. You press Submit."
+        agent: true
+      - repo: ai-job-search-dev/ai-job-search
+        zh: "建在 Claude Code 上的求职框架：fork 后填好个人档案，让 Claude 评估职位、定制简历、写求职信并帮你准备面试。"
+        en: "A job application framework built on Claude Code: fork it, fill in your profile, and let Claude evaluate postings, tailor your CV, write cover letters and prepare you for interviews."
+        agent: true
+      - repo: AienTech/dossier
+        zh: "部署在自己服务器上的求职工具：一份个人档案，为每个职位生成只用档案事实的定制简历和求职信，并跟踪每次投递。"
+        en: "Your job search on your own server: one profile, a tailored resume and cover letter for every job that only use facts from your profile, and every application tracked."
+        selfhost: true
+        note_zh: "可用 Ollama、LM Studio 本地模型，也可接云端模型"
+        note_en: "Works with local models through Ollama or LM Studio, or a hosted one"
+      - repo: DaKheera47/job-ops
+        zh: "JobOps：一个页面搜 LinkedIn、Indeed、Glassdoor 等十多个招聘网站，为每个职位改写简历、打匹配分、查签证担保情况，并跟踪所有投递。"
+        en: "JobOps searches LinkedIn, Indeed, Glassdoor and 10+ boards from one screen, rewrites your CV per role, scores fit, checks visa sponsorship and tracks every application."
+        selfhost: true
+        note_zh: "作者明确不做自动投递，每个职位仍由你自己申请"
+        note_en: "Deliberately has no auto-apply; you still apply to every job yourself"
+      - repo: vasu-devs/JustHireMe
+        zh: "本地优先的求职桌面工作台：抓取职位、按匹配度排序、生成定制的申请材料，提供 Windows、macOS 和 Linux 安装包。"
+        en: "A local-first desktop workbench that scrapes roles, ranks fit and generates tailored application materials, with installers for Windows, macOS and Linux."
+        selfhost: true
+      - repo: Gsync/jobsync
+        zh: "自己部署的求职助手：跟踪每次投递，AI 审阅简历、匹配职位并自动发现新职位，可用 Ollama 本地模型，带 MCP 服务。"
+        en: "A self-hosted job search assistant that tracks applications, reviews resumes with AI, matches jobs and discovers new openings, with local AI through Ollama and an MCP server."
+        selfhost: true
+      - repo: vesaias/JobNavigator
+        zh: "自己部署、支持多账号的求职自动化：抓取公司招聘页和聚合站，用大模型给职位打分、定制简历和求职信，Telegram 提醒，一家人可以共用一套。"
+        en: "Self-hosted, multi-account job-hunt automation: scrapes career pages and aggregators, scores jobs with an LLM, tailors resumes and cover letters and sends Telegram alerts; one install can serve a household."
+        selfhost: true
+      - repo: tarunlnmiit/autopilot-jobhunt
+        zh: "每晚扫描 130 多个公司招聘页，用大模型按你的简历打分，把最匹配的职位发到 Telegram，并按需起草定制简历和求职信。"
+        en: "Scans 130+ company careers pages nightly, scores each role against your resume with an LLM, sends top matches on Telegram and drafts a tailored resume and cover letter on demand."
+        note_zh: "只起草，不投递"
+        note_en: "Drafts only, never applies"
+      - repo: offercontext/offerPilot
+        zh: "OfferPilot：开源、本地优先的求职 Agent 工作台，把投递、简历、面试和 Offer 放在一起；不会自动投递，也不会替你联系招聘方。"
+        en: "OfferPilot, an open-source, local-first job search agent workbench for applications, resumes, interviews and offers; it never auto-applies or contacts recruiters for you."
+        selfhost: true
+        cn: true
+        note_zh: "基础投递记录不需要 AI；使用 AI 时需要接自己的模型服务"
+        note_en: "Basic tracking needs no AI; AI features use your own model service"
+      - repo: Chozzc/Lujie-Careerkit
+        zh: "录阶：面向实习、校招的求职 Agent 工作台，覆盖简历编辑、JD 匹配、投递跟进、模拟面试和复盘。"
+        en: "LuJie CareerKit, an agent workbench for internships and campus hiring that covers resume editing, JD matching, application follow-up, mock interviews and reviews."
+        cn: true
+      - repo: low-hands/MyCareer
+        zh: "跑在自己电脑上的 AI 求职助手：找岗位、看匹配、改简历、练面试、管投递，数据存在本机 SQLite；每条“符合”都引用简历原文。"
+        en: "An AI job search assistant on your own computer for finding roles, checking fit, editing resumes, practising interviews and tracking applications, stored in local SQLite; every match quotes your resume."
+        selfhost: true
+        cn: true
+      - repo: DanielPan12/JobHuntBot
+        zh: "由 Agent 带着走的求职投递流程加本地进度看板，适用于 Claude Code、Codex、Cursor 等；不是一键海投，最终提交需要你授权。"
+        en: "An agent-led application workflow with a local progress dashboard for Claude Code, Codex, Cursor and others; not a one-click auto-apply bot, and final submission needs your authorization."
+        agent: true
+        cn: true
+      - repo: shengjidaguai-china/BossHunter
+        zh: "国内招聘平台的求职 Agent：本地完成岗位采集、AI 评分、定制简历和回复监测，所有投递必须先经人工确认。"
+        en: "A job search agent for Chinese hiring platforms: collects roles, scores them with AI, tailors resumes and monitors replies locally; every application needs your confirmation first."
+        selfhost: true
+        cn: true
+        auto: true
+        note_zh: "作者提示自动化操作招聘平台有账号受限或封禁风险；许可证为非商业"
+        note_en: "The author warns that automating hiring platforms can get accounts restricted; non-commercial license"
+
+  - id: skills
+    zh: "求职 Skill：装进 Claude Code、Codex 就能用"
+    en: "Job search skills for Claude Code and Codex"
+    zh_intro: "不用部署，把 skill 装进你已经在用的 AI 助手，用对话完成改简历、分析 JD 和准备面试。"
+    en_intro: "Nothing to deploy: install a skill in the AI agent you already use and handle resumes, job descriptions and interview prep in conversation."
+    items:
+      - repo: Hisn00w/ASu-skills
+        zh: "中文求职工作流插件：九个入口覆盖开源贡献、简历提升、简历制作、岗位匹配、投递填写、面试准备和校招进度管理。"
+        en: "A Chinese job-hunting workflow plugin with nine entry points, from open-source contribution and resume work to job matching, application filling, interview prep and campus-hiring tracking."
+        agent: true
+        cn: true
+      - repo: Paramchoudhary/ResumeSkills
+        zh: "一组面向简历优化、求职申请和职业发展的 AI Agent skill，包括 ATS 优化、要点改写和面试准备。"
+        en: "A collection of AI agent skills for resume optimization, job applications and career development, including ATS checks, bullet rewriting and interview prep."
+        agent: true
+      - repo: LiuMengxuan04/shushu-internship-tool
+        zh: "鼠鼠实习妙妙工具：把岗位描述变成项目，把项目变成简历，把简历变成面试准备，适合零经验或经验少的计算机方向同学。"
+        en: "Turns a job description into a project, the project into a resume and the resume into interview prep, for CS students with little or no experience."
+        agent: true
+        cn: true
+      - repo: agentenatalie/get-job.skill
+        zh: "实习.skill：从岗位调研、简历改写到分轮次面试准备，把真实背景翻译成面试官想要的语言。"
+        en: "A full job-hunt skill: role research, resume rewriting and round-by-round interview prep that puts your real background into the interviewer's language."
+        agent: true
+        cn: true
+      - repo: yanliudesign/offer-toolkit-skill
+        zh: "六个求职工具打包成一个 skill 包：找机会、解码 JD、改简历、准备行为面试、对比 Offer 和谈薪，可以整包用也可以单独用。"
+        en: "Six job-hunt tools in one skill bundle: job discovery, JD decoding, resume building, behavioral interview prep, offer comparison and salary negotiation, usable together or separately."
+        agent: true
+        cn: true
+      - repo: weeelin98/ResumeDom
+        zh: "面向美国科技岗位、以事实证据为核心的 Codex 简历 skill：评估、修改、按职位定制并输出可编辑的 LaTeX，绝不虚构经历。"
+        en: "An evidence-first Codex skill for US tech resumes: review, rewrite, tailor to a job and return editable LaTeX without inventing experience."
+        agent: true
+        cn: true
+      - repo: kkw114514-lang/campus-job-application-workflow
+        zh: "给能操作浏览器的 AI 助手用的校招网申模板：岗位可投性核实、网申填写、提交核验和记录。"
+        en: "A campus-recruiting application template for browser-capable AI agents: checks eligibility, fills forms, verifies submissions and keeps records."
+        agent: true
+        cn: true
+      - repo: lijiaqi-AI-Product-Manager/job_radar
+        zh: "给 AI 助手加的找工作技能：用自然语言查中国校招、实习、社招和招聘日历，返回岗位要求和来源链接，支持 Skill 和 MCP。"
+        en: "A job search skill for AI assistants: ask in plain language about campus, intern and experienced roles and hiring calendars in China, with requirements and source links; Skill and MCP."
+        agent: true
+        cn: true
+      - repo: guzhezao/qiuzhao
+        zh: "国内校招求职 skill：岗位筛选、JD 评分、简历定制、表单预填和本地投递看板；不编造经历，不绕验证码，不在未确认时提交。"
+        en: "A campus-hiring skill for China: role filtering, JD scoring, resume tailoring, form pre-filling and a local dashboard; no invented experience, no CAPTCHA bypass, no unconfirmed submissions."
+        agent: true
+        cn: true
+
+  - id: find
+    zh: "找职位：搜索和聚合"
+    en: "Find jobs: search and aggregation"
+    zh_intro: ""
+    en_intro: ""
+    items:
+      - repo: strelov1/freehire
+        zh: "面向求职者的开源职位搜索引擎：职位直接来自公司招聘页，没有猎头转发和失效链接，人和 Agent 都能用，提供 API。"
+        en: "An open-source job search engine for job seekers: postings come straight from company career pages, with no recruiter reposts or dead links, for you and your agent, with an API."
+      - repo: speedyapply/JobSpy
+        zh: "职位抓取库：同时抓 LinkedIn、Indeed、Glassdoor、ZipRecruiter 等网站，汇总成一张表，很多求职工具的底层都用它。"
+        en: "A job scraping library that pulls LinkedIn, Indeed, Glassdoor, ZipRecruiter and more at once into one dataframe; many job tools build on it."
+        auto: true
+      - repo: pinloop-ai/pinloop-cli
+        zh: "给 AI 编程助手用的命令行职位库：每月汇集全球数百万白领职位，可以保存你的简历和偏好，逐条判断职位是否适合你。"
+        en: "A job board for your coding agent, run from the terminal: millions of white-collar postings a month worldwide, judged against your resume and preferences."
+        agent: true
+        note_zh: "命令连接 Pinloop 的服务器，需要注册账号"
+        note_en: "Commands talk to Pinloop's servers and need an account"
+      - repo: can4hou6joeng4/boss-agent-cli
+        zh: "面向真人和 AI Agent 的国内招聘平台命令行：职位搜索、福利筛选、候选清单，输出结构化 JSON。"
+        en: "A CLI for a Chinese hiring platform, for people and AI agents: job search, benefits filtering and shortlists with structured JSON output."
+        agent: true
+        cn: true
+        auto: true
+
+  - id: lists
+    zh: "每日更新的职位清单"
+    en: "Job lists updated daily"
+    zh_intro: "直接在 GitHub 上看的实习、应届和初级职位清单。这类清单多由求职产品公司维护，页面里会推广自家产品。"
+    en_intro: "Internship, new-grad and entry-level lists you can read right on GitHub. Most are maintained by job-product companies and promote their own products on the page."
+    static: true
+    items:
+      - repo: SimplifyJobs/Summer2027-Internships
+        zh: "2027 年暑期实习清单：软件、数据科学、AI、量化、产品和硬件方向，美国为主。"
+        en: "Summer 2027 internships in software, data science, AI, quant, product and hardware, mostly US."
+      - repo: speedyapply/2027-SWE-College-Jobs
+        zh: "2027 届软件工程实习和应届职位清单，每日更新。"
+        en: "2027 software engineering internship and new-grad jobs, updated daily."
+      - repo: speedyapply/2027-AI-College-Jobs
+        zh: "2027 届 AI / 机器学习实习和应届职位清单，每日更新。"
+        en: "2027 AI/ML internship and new-grad jobs, updated daily."
+      - repo: LorenzoLaCorte/european-tech-internships-2026
+        zh: "欧洲科技实习、应届职位和研究机会，定期更新。"
+        en: "European tech internships, new-grad roles and research opportunities, updated regularly."
+      - repo: hanzili/canada_sde_junior_new_grad_position
+        zh: "加拿大计算机应届和初级职位，每日更新。"
+        en: "Canadian CS new-grad and junior jobs, updated daily."
+      - repo: workopia/Australia-Graduate-Jobs
+        zh: "澳大利亚毕业生项目、初级职位和实习，按行业分类，每日更新。"
+        en: "Australian graduate schemes, entry-level roles and internships by sector, updated daily."
+      - repo: workopia/Australia-Casual-Part-Time-Jobs
+        zh: "澳大利亚临时工、兼职和圣诞季兼职职位，每日更新。"
+        en: "Australian casual, part-time and Christmas casual jobs, updated daily."
+      - repo: namewyf/Campus2026
+        zh: "互联网校招和实习信息汇总，社区共同维护。"
+        en: "Community-maintained campus recruiting and internship information for Chinese internet companies."
+        cn: true
+
+  - id: resume
+    zh: "写简历"
+    en: "Build your resume"
+    zh_intro: "在线编辑器、把简历当代码写的工具，以及经典模板。"
+    en_intro: "Online editors, resume-as-code tools and classic templates."
+    items:
+      - repo: reactive-resume/reactive-resume
+        zh: "免费开源的简历制作工具：写简历和求职信、检查内容、跟踪投递，可导出 PDF、Word、Markdown 或 JSON，也能部署在自己的服务器上。"
+        en: "A free, open-source resume builder for resumes and cover letters, with checks and application tracking; exports PDF, Word, Markdown or JSON and can run on your own infrastructure."
+        selfhost: true
+      - repo: rendercv/rendercv
+        zh: "面向学术和工程师的简历工具：用 YAML 写内容，一条命令生成排版精良的 PDF，方便用 Git 管理版本。"
+        en: "A resume builder for academics and engineers: write your CV as YAML and render a well-typeset PDF with one command, easy to version-control."
+      - repo: JOYCEQL/magic-resume
+        zh: "现代化的在线简历编辑器：实时预览、自定义主题、导出 PDF，数据自动保存在本地。"
+        en: "A modern online resume editor with live preview, custom themes, PDF export and local auto-save."
+        cn: true
+      - repo: LingyiChen-AI/JadeAI
+        zh: "AI 简历生成器：拖拽编辑、AI 优化、50 套模板、多格式导出；桌面客户端支持 macOS 和 Windows，无需账号，数据在本机。"
+        en: "An AI resume builder with drag-and-drop editing, AI optimization, 50 templates and multi-format export; the macOS and Windows desktop app needs no account and keeps data local."
+        selfhost: true
+        cn: true
+      - repo: magicapple123/ResumeForge
+        zh: "简历通：本地优先的 AI 简历工作台，无需注册登录，数据只保存在本机。"
+        en: "ResumeForge, a local-first AI resume workbench with no sign-up; data stays on your machine."
+        selfhost: true
+        cn: true
+      - repo: yamlresume/yamlresume
+        zh: "把简历当代码：用 YAML 写简历，生成专业排版的 PDF。"
+        en: "Resumes as code: write your resume in YAML and get a professionally typeset PDF."
+      - repo: saadq/resumake.io
+        zh: "免费开源的 LaTeX 简历生成网站：没有广告，不用注册，简历保存在你自己的浏览器里。"
+        en: "A free, open-source LaTeX resume generator with no ads or accounts; your resume is saved in your own browser."
+      - repo: Arman19941113/dnd-resume
+        zh: "本地优先的拖拽式简历制作工具，直接在浏览器里编辑并导出 PDF。"
+        en: "A local-first drag-and-drop resume builder that edits and exports PDF right in the browser."
+        cn: true
+      - repo: BingyanStudio/LapisCV
+        zh: "用 Markdown 写简历：在 VS Code、Typora 或 Obsidian 里套用主题即可。"
+        en: "Write your resume in Markdown with a theme for VS Code, Typora or Obsidian."
+        cn: true
+      - repo: yunanwg/brilliant-CV
+        zh: "基于 Typst 的模块化简历模板，一套资料可以切换成针对不同职位或语言的版本。"
+        en: "A modular CV template for Typst; one set of data can switch between versions for different jobs or languages."
+      - repo: posquit0/Awesome-CV
+        zh: "经典的 LaTeX 简历和求职信模板。"
+        en: "The classic LaTeX template for resumes and cover letters."
+      - repo: dyweb/awesome-resume-for-chinese
+        zh: "适合中文的简历模板合集（LaTeX、HTML 等）。"
+        en: "A collection of resume templates that work well for Chinese (LaTeX, HTML and more)."
+        cn: true
+      - repo: youngyangyang04/Markdown-Resume-Template
+        zh: "程序员向的 Markdown 简历模板，简单明了，fork 后直接改。"
+        en: "A plain Markdown resume template for programmers; fork and edit."
+        cn: true
+      - repo: Nutlope/self.so
+        zh: "上传简历 PDF，用 AI 生成个人主页。"
+        en: "Upload your resume PDF and get a personal site generated with AI."
+
+  - id: match
+    zh: "简历和职位匹配"
+    en: "Match your resume to the job"
+    zh_intro: "投之前先对照职位描述检查简历：缺哪些要求、哪些关键词没出现、哪些句子可以改。"
+    en_intro: "Check your resume against the job description before you apply: which requirements are missing, which keywords never appear and which lines to rewrite."
+    items:
+      - repo: srbhr/Resume-Matcher
+        zh: "免费开源、可自己部署的 AI 简历工具：根据每一份职位描述定制简历，支持多种大模型。"
+        en: "A free, open-source, self-hosted AI resume tool that tailors your resume to each job description, with many LLMs supported."
+        selfhost: true
+      - repo: DU8866-nice/jobfit
+        zh: "JobFit：对照职位描述逐条核对简历，每个“满足”都附简历原句作证据，修改建议只改你已有的句子，支持中英文。"
+        en: "JobFit checks your resume against a job description requirement by requirement; every match quotes your resume as evidence, and suggestions only rewrite lines you already have. Chinese and English."
+        cn: true
+        note_zh: "本清单作者的项目"
+        note_en: "Made by the author of this list"
+      - repo: interviewstreet/hiring-agent
+        zh: "招聘方视角的简历打分 Agent：从 PDF 提取结构化信息，结合 GitHub 数据给出可解释的评分。想知道 AI 怎么筛简历可以看它。"
+        en: "A resume-scoring agent from the hiring side: extracts structured data from PDFs, adds GitHub signals and gives an explainable score. Worth reading to see how AI screens resumes."
+
+  - id: apply
+    zh: "帮你填申请表（最后由你提交）"
+    en: "Fill application forms (you submit)"
+    zh_intro: "网申最费时间的是重复填表。这些工具帮你填，停在提交之前。"
+    en_intro: "The slow part of applying is retyping the same details. These tools fill the form and stop before submitting."
+    items:
+      - repo: AhmadHassan-BTed/FormFilla
+        zh: "本地优先的浏览器扩展：用本地保存的个人资料填 Workday、Greenhouse、Lever 等申请系统的表单，全程不联网、不用大模型。"
+        en: "A local-first browser extension that fills Workday, Greenhouse, Lever and other application forms from locally stored profile data, with no network calls and no LLM."
+        selfhost: true
+      - repo: qbeka/jev-job-search
+        zh: "找软件实习和应届职位，在你能看着的 Chrome 窗口里填好申请表，逐项回读页面上的答案，只发送你批准的内容。"
+        en: "Finds software internships and new-grad jobs, fills each application in a Chrome window you can watch, reads every answer back from the page and sends only what you approve."
+        agent: true
+      - repo: aurostars/Job-Application-Helper
+        zh: "秋招网申助手：Chrome 和 Edge 扩展，集中管理求职资料，识别招聘表单并快速填入个人信息、教育经历和项目经历，带投递记录。"
+        en: "A Chrome and Edge extension for campus applications in China: keeps your details in one place, detects application forms and fills personal, education and project fields, with an application log."
+        cn: true
+      - repo: extrasmall0/dear-hiring-manager
+        zh: "Claude Code 插件：读职位描述、评估匹配、用保存的资料填好每一项，并用你的口吻起草开放题和求职信，填完后把最后的发送留给你。"
+        en: "A Claude Code plugin that reads the job description, scores fit, fills every field from your saved profile and drafts answers and a cover letter in your voice, leaving the final send to you."
+        agent: true
+        selfhost: true
+
+  - id: auto
+    zh: "全自动投递（先看风险）"
+    en: "Fully automatic applying (read the risks first)"
+    zh_intro: "这些工具会用你的账号自动投递或自动打招呼。招聘平台的条款通常禁止自动化，账号可能被限制或封禁。列在这里是因为它们确实很多人用，不代表推荐。"
+    en_intro: "These tools apply or message recruiters automatically with your account. Hiring platforms usually forbid automation, so accounts can be restricted or banned. They are listed because many people use them, not as a recommendation."
+    items:
+      - repo: feder-cr/Jobs_Applier_AI_Agent
+        zh: "AIHawk：读你的简历去搜索匹配的职位，由你挑选后在公司的申请表上自动填写并提交。"
+        en: "AIHawk reads your resume, searches for matching postings, and after you pick, fills in and sends each application on the company's own form."
+        auto: true
+      - repo: loks666/get_jobs
+        zh: "国内招聘平台的自动投简历脚本，支持 Boss、前程无忧、猎聘、智联招聘。"
+        en: "An auto-apply script for Chinese hiring platforms, covering Boss, 51job, Liepin and Zhaopin."
+        cn: true
+        auto: true
+        note_zh: "作者建议 Boss 仍以手动投递为主；许可证为非商业"
+        note_en: "The author still recommends applying manually on Boss; non-commercial license"
+      - repo: GodsScion/Auto_job_applier_linkedIn
+        zh: "在自己电脑上用自己的 LinkedIn 账号自动申请职位，可选用 AI 回答申请问题。"
+        en: "Automates LinkedIn applications on your own computer with your own account, optionally using AI to answer application questions."
+        auto: true
+      - repo: Ocyss/boss-helper
+        zh: "Boss 直聘助手：浏览器扩展，批量投递、高级筛选、AI 自动打招呼。"
+        en: "A browser extension for Boss Zhipin with batch applying, advanced filters and AI greetings."
+        cn: true
+        auto: true
+        note_zh: "作者提示有封号、权重降低等风险"
+        note_en: "The author warns of bans and reduced account ranking"
+
+  - id: interview
+    zh: "面试准备"
+    en: "Interview prep"
+    zh_intro: "AI 模拟面试工具，加上长期维护的面试题库和学习路线。"
+    en_intro: "AI mock-interview tools plus long-maintained question banks and study plans."
+    static: true
+    items:
+      - repo: Snailclimb/interview-guide
+        zh: "开源的 AI 面试平台：简历分析、文字和语音模拟面试、知识库题库面试，完整功能免费。"
+        en: "An open-source AI interview platform with resume analysis, text and voice mock interviews and knowledge-base question sets; all features are free."
+        cn: true
+      - repo: RezaSi/go-interview-practice
+        zh: "交互式 Go 面试练习平台：编程题、即时反馈和 AI 模拟面试。"
+        en: "An interactive Go interview practice platform with coding challenges, instant feedback and AI interview simulation."
+      - repo: jwasham/coding-interview-university
+        zh: "成为软件工程师的完整计算机科学自学计划。"
+        en: "A complete computer science study plan to become a software engineer."
+      - repo: donnemartin/system-design-primer
+        zh: "系统设计入门：学习设计大型系统，准备系统设计面试。"
+        en: "Learn how to design large-scale systems and prep for the system design interview."
+      - repo: yangshun/tech-interview-handbook
+        zh: "给忙碌工程师的编程面试准备材料，涵盖简历、算法、行为面试和谈薪。"
+        en: "Curated coding interview preparation for busy engineers, covering resumes, algorithms, behavioral interviews and negotiation."
+      - repo: Snailclimb/JavaGuide
+        zh: "Java 面试和后端通用面试指南，覆盖计算机基础、数据库、分布式、系统设计和 AI 应用开发。"
+        en: "A Java and backend interview guide in Chinese, covering CS basics, databases, distributed systems, system design and AI application development."
+        cn: true
+      - repo: karanpratapsingh/system-design
+        zh: "学习如何设计大规模系统，准备系统设计面试。"
+        en: "Learn how to design systems at scale and prepare for system design interviews."
+      - repo: yangshun/front-end-interview-handbook
+        zh: "给忙碌工程师的前端面试准备材料。"
+        en: "Front-end interview preparation materials for busy engineers."
+      - repo: alirezadir/AIMLInterviews
+        zh: "生成式 AI、Agent、多模态等方向的 AI/ML 面试指南。"
+        en: "A guide to AI/ML interviews across generative AI, agentic AI, multimodal AI and more."
+      - repo: wdndev/llm_interview_note
+        zh: "大语言模型算法和应用工程师的知识点与面试题。"
+        en: "Knowledge notes and interview questions for LLM algorithm and application engineers, in Chinese."
+        cn: true
+      - repo: adongwanai/AgentGuide
+        zh: "AI Agent 开发指南，附大模型面试题库。"
+        en: "An AI agent development guide in Chinese with a large LLM interview question bank."
+        cn: true
+      - repo: alexeygrigorev/data-science-interviews
+        zh: "数据科学面试问题和答案。"
+        en: "Data science interview questions and answers."
+      - repo: WeThinkIn/AIGC-Interview-Book
+        zh: "AIGC、大模型和 AI Agent 算法工程师面试资源。"
+        en: "Interview resources for AIGC, LLM and AI agent algorithm engineers, in Chinese."
+        cn: true
+      - repo: amitshekhariitbhu/ai-engineering-interview-questions
+        zh: "AI 工程面试的问题和答案速查。"
+        en: "A cheat sheet of AI engineering interview questions and answers."
+      - repo: Exorust/TorchLeet
+        zh: "PyTorch 版的 LeetCode：来自真实面试的 ML/AI 编程题。"
+        en: "LeetCode for PyTorch: ML/AI interview problems from real interviews."
+
+  - id: guides
+    zh: "求职指南"
+    en: "Job search guides"
+    zh_intro: ""
+    en_intro: ""
+    static: true
+    items:
+      - repo: AndrewStetsenko/tech-jobs-with-relocation
+        zh: "去国外找科技工作的一站式指南，包含提供搬迁支持的公司和资源。"
+        en: "An all-in-one guide to getting a tech job abroad, with companies and resources that offer relocation."
+      - repo: AIPMAndy/how-to-get-offer
+        zh: "社招拿 Offer 指南：定位、简历、渠道和内推、面试、谈薪到入职，附 30 天执行表和模板。"
+        en: "A guide in Chinese to landing an offer as an experienced hire, from positioning and resume to referrals, interviews, negotiation and onboarding, with a 30-day plan and templates."
+        cn: true
+      - repo: wuyoueeee/CS-Job-Guide
+        zh: "计算机专业用 AI 求职的开源手册：选方向、写简历、过面试到 Offer 决策和签约避坑，适合实习、春招和秋招。"
+        en: "An open handbook in Chinese for CS students job hunting with AI, from choosing a direction and writing a resume to interviews, offer decisions and contract pitfalls."
+        cn: true
+
+related:
+  - repo: lukasz-madon/awesome-remote-job
+    zh: "远程工作的招聘网站和资源合集。"
+    en: "A curated list of remote job boards and resources."
+  - repo: emredurukn/awesome-job-boards
+    zh: "各类招聘网站合集。"
+    en: "A curated list of job boards."
